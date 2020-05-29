@@ -1,3 +1,7 @@
+html {
+    box-sizing: border-box;
+}
+
 #desktop {
     min-width: 100%;
     min-height: 100vh;
@@ -11,18 +15,57 @@
     min-height: 5vh;
     width: 100%;
     background-color: bisque;
+    user-select: none;
 }
 
 .window {
     min-height: 30vh;
+    min-width: 30vh;
     width: 40vh;
-    background-color: burlywood;
+    background-color: rgb(33, 34, 36);
+    color: antiquewhite;
+    resize: both;
+    overflow: auto;
 }
 
 .window-top-bar {
     min-width: 100%;
     min-height: 3vh;
-    background-color: cornsilk;
+    background-color: royalblue;
+    color: black;
+    user-select: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.window-top-bar p {
+    flex-grow: 1;
+}
+
+.window-control {
+    display: inline-flex;
+    flex-direction: row;
+}
+
+.window-control-button {
+    height: 2vh;
+    width: 2vh;
+    border-radius: 8px;
+    margin-right: 4px;
+}
+
+.window-minimize-button {
+    background-color: yellow;
+}
+
+.window-maximize-button {
+    background-color: greenyellow;
+}
+
+.window-close-button {
+    background-color: red;
 }
 
 /* --- */

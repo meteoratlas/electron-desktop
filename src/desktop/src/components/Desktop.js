@@ -10,7 +10,7 @@ class Desktop extends Component {
     render() {
         return (
             <div id="desktop">
-                <Window />
+                <Window name="Visual Studio Code" />
                 <Taskbar />
             </div>
         );
