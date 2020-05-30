@@ -19,20 +19,26 @@ html {
 }
 
 .window {
-    min-height: 30vh;
-    min-width: 30vh;
+    min-height: 50vh;
+    min-width: 50vh;
     width: 40vh;
     background-color: rgb(33, 34, 36);
     color: antiquewhite;
     resize: both;
-    overflow: auto;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.4) 4px 4px;
+}
+
+.window iframe {
+    width: 100%;
+    height: 100%;
 }
 
 .window-top-bar {
     min-width: 100%;
     min-height: 3vh;
     background-color: royalblue;
-    color: black;
+    color: white;
     user-select: none;
     display: flex;
     flex-direction: row;
