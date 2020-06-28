@@ -1,106 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="author" content="Gauthier Staehler" />
+        <meta
+            name="description"
+            content="Lightweight and touchscreen friendly zero-dependency JavaScript library for draggable windows"
+        />
+        <meta name="keywords" content="JavaScript, CSS, Window, Draggable" />
+        <title>Window Engine - JavaScript Library</title>
+        <link rel="stylesheet" href="demo.css" />
+        <link rel="stylesheet" href="../src/window-engine.css" />
+        <link rel="stylesheet" href="https://unpkg.com/xp.css@/dist/98.css" />
+    </head>
 
-<head>
-	<meta charset="utf-8">
-	<meta name="author" content="Gauthier Staehler">
-	<meta name="description" content="Lightweight and touchscreen friendly zero-dependency JavaScript library for draggable windows">
-	<meta name="keywords" content="JavaScript, CSS, Window, Draggable">
-	<title>Window Engine - JavaScript Library</title>
-	<link rel="stylesheet" href="demo.css">
-	<link rel="stylesheet" href="../src/window-engine.css">
-</head>
+    <body>
+        <header>
+            <p>Window Engine 4.3.7</p>
+        </header>
 
-<body>
+        <div class="windowGroup">
+            <!-- WINDOW 1 -->
+            <div class="window" id="window1" style="display: initial;" style="width: 300px;">
+                <div class="title-bar">
+                    <div class="title-bar-text">A Window With Stuff In It</div>
+                    <div class="title-bar-controls">
+                        <button aria-label="Minimize"></button>
+                        <button aria-label="Maximize"></button>
+                        <button aria-label="Close"></button>
+                    </div>
+                </div>
+                <div class="window-body">
+                    <p>There's so much room for activities!</p>
+                </div>
+            </div>
 
-	<header>
-		<p>Window Engine 4.3.7</p>
-	</header>
+            <!-- <div id="window1" class="window" style="display: initial;">
+                <div class="title-bar">
+                    <div class="title-bar-text">A Title Bar</div>
+                    <div class="title-bar-controls">
+                        <button aria-label="Close"></button>
+                    </div>
+                </div>
+                <!-- <div class="purple">
+                    <p class="windowTitle">Window Engine</p>
+                </div>
+                <div class="mainWindow">
+                    <p>Welcome to Window Engine !</p>
+                    <p>
+                        Window Engine helps you start projects that need
+                        draggable windows.
+                    </p>
+                </div> -->
+            </div> -->
 
-	<div class="windowGroup">
+            <!-- WINDOW 2 -->
 
-		<!-- WINDOW 1 -->
+            <div id="window2" class="window fade">
+                <div class="cyan">
+                    <p class="windowTitle">Second Window</p>
+                </div>
+                <div class="mainWindow">
+                    <p>Cyan</p>
+                    <p>With fade effect !</p>
+                </div>
+            </div>
 
-		<div id="window1" class="window" style="display: initial;">
-			<div class="purple">
-				<p class="windowTitle">Window Engine</p>
-			</div>
-			<div class="mainWindow">
-				<p>Welcome to Window Engine !</p>
-				<p>Window Engine helps you start projects that need draggable windows.</p>
-			</div>
-		</div>
+            <!-- WINDOW 3 -->
 
-		<!-- WINDOW 2 -->
+            <div id="window3" class="window fade">
+                <div class="brown">
+                    <p class="windowTitle">Third Window</p>
+                </div>
+                <div class="mainWindow">
+                    <p>Brown</p>
+                    <p>With fade effect !</p>
+                </div>
+            </div>
 
-		<div id="window2" class="window fade">
-			<div class="cyan">
-				<p class="windowTitle">Second Window</p>
-			</div>
-			<div class="mainWindow">
-				<p>Cyan</p>
-				<p>With fade effect !</p>
-			</div>
-		</div>
+            <!-- WINDOW 4 -->
 
-		<!-- WINDOW 3 -->
+            <div id="window4" class="window small">
+                <div class="orange">
+                    <p class="windowTitle">Fourth Window</p>
+                </div>
+                <div class="mainWindow">
+                    <p>Orange - Small</p>
+                </div>
+            </div>
 
-		<div id="window3" class="window fade">
-			<div class="brown">
-				<p class="windowTitle">Third Window</p>
-			</div>
-			<div class="mainWindow">
-				<p>Brown</p>
-				<p>With fade effect !</p>
-			</div>
-		</div>
+            <!-- WINDOW 5 -->
 
-		<!-- WINDOW 4 -->
+            <div id="window5" class="window large">
+                <div class="crimson">
+                    <p class="windowTitle">Fifth Window</p>
+                </div>
+                <div class="mainWindow">
+                    <p>Crimson - Large</p>
+                </div>
+            </div>
 
-		<div id="window4" class="window small">
-			<div class="orange">
-				<p class="windowTitle">Fourth Window</p>
-			</div>
-			<div class="mainWindow">
-				<p>Orange - Small</p>
-			</div>
-		</div>
+            <!-- WINDOW 6 -->
 
-		<!-- WINDOW 5 -->
+            <div id="window6" class="window">
+                <div class="green">
+                    <p class="windowTitle">Sixth Window</p>
+                </div>
+                <div class="mainWindow">
+                    <p>Green</p>
+                </div>
+            </div>
+        </div>
 
-		<div id="window5" class="window large">
-			<div class="crimson">
-				<p class="windowTitle">Fifth Window</p>
-			</div>
-			<div class="mainWindow">
-				<p>Crimson - Large</p>
-			</div>
-		</div>
-
-		<!-- WINDOW 6 -->
-
-		<div id="window6" class="window">
-			<div class="green">
-				<p class="windowTitle">Sixth Window</p>
-			</div>
-			<div class="mainWindow">
-				<p>Green</p>
-			</div>
-		</div>
-
-	</div>
-
-	<footer>
-		<span id="button1">1</span>
-		<span id="button2">2</span>
-		<span id="button3">3</span>
-		<span id="button4">4</span>
-		<span id="button5">5</span>
-		<span id="button6">6</span>
-	</footer>
-
-</body>
-
+        <footer>
+            <span id="button1">1</span>
+            <span id="button2">2</span>
+            <span id="button3">3</span>
+            <span id="button4">4</span>
+            <span id="button5">5</span>
+            <span id="button6">6</span>
+        </footer>
+    </body>
 </html>
 
 <script src="../src/window-engine.js"></script>

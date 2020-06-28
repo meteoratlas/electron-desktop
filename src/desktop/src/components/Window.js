@@ -1,6 +1,7 @@
 import React from "react";
 import WindowTopBar from "./WindowTopBar";
 import Draggable from "react-draggable";
+import "xp.css/dist/98.css";
 
 const Window = (props) => {
     const onMinimizeClicked = () => {};
@@ -9,6 +10,12 @@ const Window = (props) => {
     return (
         <Draggable handle=".window-top-bar" bounds="parent">
             <div className="window">
+                <div class="title-bar">
+                    <div class="title-bar-text">A Title Bar</div>
+                    <div class="title-bar-controls">
+                        <button aria-label="Close"></button>
+                    </div>
+                </div>
                 <WindowTopBar
                     title={props.name}
                     onMinimize={onMinimizeClicked}

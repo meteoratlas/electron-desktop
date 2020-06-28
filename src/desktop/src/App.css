@@ -24,7 +24,6 @@ html {
     width: 40vh;
     background-color: rgb(33, 34, 36);
     color: antiquewhite;
-    /* resize: both; */
     overflow: hidden;
     box-shadow: rgba(0, 0, 0, 0.4) 4px 4px;
 }
